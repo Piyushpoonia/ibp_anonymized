@@ -1,7 +1,7 @@
 # Frozen resources
 
 `obj_enc.pth` is the PointNet object encoder checkpoint used by the feature
-extractor. `hf_models.part01` through `hf_models.part03`[weights](https://drive.google.com/drive/folders/1J-G6PFFi2xwTBCc90SXyH51tbr8wHIhn?usp=drive_link) are consecutive
+extractor. [`hf_models.part01`] (https://drive.google.com/drive/folders/1J-G6PFFi2xwTBCc90SXyH51tbr8wHIhn?usp=drive_link) through `hf_models.part03`are consecutive
 1 GiB-or-smaller chunks of the original `hf_models.tar.gz` cache archive,
 containing CLIP ViT-B/16 and BLIP image-captioning base. Do not extract
 individual chunks. Run `python resource/install_weights.py` from the package
