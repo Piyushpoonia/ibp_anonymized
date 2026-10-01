@@ -1,0 +1,79 @@
+{
+  "schema_version": "IBP-K360-sequence-split-v1.0.0",
+  "dataset": "KITTI-360",
+  "split_unit": "complete driving sequence",
+  "selection_method": "fixed support-stratified sequence split",
+  "random_split_seed": null,
+  "training_seed": 42,
+  "train": [
+    "2013_05_28_drive_0000_sync",
+    "2013_05_28_drive_0002_sync",
+    "2013_05_28_drive_0003_sync",
+    "2013_05_28_drive_0004_sync",
+    "2013_05_28_drive_0005_sync",
+    "2013_05_28_drive_0010_sync"
+  ],
+  "validation": [
+    "2013_05_28_drive_0006_sync"
+  ],
+  "test": [
+    "2013_05_28_drive_0007_sync",
+    "2013_05_28_drive_0009_sync"
+  ],
+  "trainable_predicates": {
+    "spatial": [
+      "left_of",
+      "in_front_of",
+      "near",
+      "overlapping",
+      "occluding"
+    ],
+    "temporal": [
+      "approaching",
+      "moving_away",
+      "same_motion_direction"
+    ]
+  },
+  "exploratory_predicates_not_trained": [
+    "crossing_path"
+  ],
+  "support": {
+    "train": {
+      "left_of": 478908,
+      "in_front_of": 509674,
+      "near": 264380,
+      "overlapping": 63326,
+      "occluding": 9951,
+      "approaching": 11233,
+      "moving_away": 15262,
+      "same_motion_direction": 2780
+    },
+    "validation": {
+      "left_of": 69016,
+      "in_front_of": 74257,
+      "near": 46280,
+      "overlapping": 12726,
+      "occluding": 2593,
+      "approaching": 761,
+      "moving_away": 1023,
+      "same_motion_direction": 112
+    },
+    "test": {
+      "left_of": 160420,
+      "in_front_of": 167819,
+      "near": 83010,
+      "overlapping": 16154,
+      "occluding": 2637,
+      "approaching": 3243,
+      "moving_away": 3817,
+      "same_motion_direction": 1148
+    }
+  },
+  "leakage_policy": [
+    "A complete driving sequence belongs to exactly one split.",
+    "No overlapping temporal windows cross split boundaries.",
+    "Predicate thresholds and model hyperparameters are not tuned on test sequences.",
+    "Local sequence 0002 belongs to train and may be used for development smoke tests."
+  ],
+  "crossing_path_note": "Only 16 approximate independent crossing events occur in two sequences, so crossing_path is retained for exploratory analysis but excluded from supervised training and headline evaluation."
+}

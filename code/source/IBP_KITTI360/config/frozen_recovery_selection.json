@@ -1,0 +1,11 @@
+{
+  "schema_version": "IBP-K360-tracklet-recovery-v1.0.0",
+  "selection_split": "validation",
+  "validation_sequence": "2013_05_28_drive_0006_sync",
+  "selected_variant": {
+    "variant": "all_margin_0p00",
+    "mode": "all",
+    "margin_threshold": 0.0
+  },
+  "note": "This is the previously frozen validation-selected recovery policy. It is reused unchanged for every seed and is not reselected on held-out test data."
+}

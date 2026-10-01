@@ -1,0 +1,350 @@
+{
+  "schema_version": "IBP-K360-final-predicted-graph-evaluation-v1.0.0",
+  "split": "held_out_test",
+  "enabled_modalities": [
+    "rgb",
+    "lidar",
+    "text"
+  ],
+  "use_parts": true,
+  "test_sequences": [
+    "2013_05_28_drive_0007_sync",
+    "2013_05_28_drive_0009_sync"
+  ],
+  "checkpoint": "/data/sriparna/Arvind/temp/Exeriment/runs/seed_42/stage3_predicted/checkpoints/stage3_best.pt",
+  "checkpoint_sha256": "ecb21e98734c43ea2f25896129e904c8e343226e5843d8372f7ce1703d8fc9a3",
+  "object": {
+    "objects": 25358,
+    "accuracy": 0.8088966012001038,
+    "macro_f1": 0.5295654048809907,
+    "per_class": {
+      "building": {
+        "support": 5408,
+        "precision": 0.9671361502347418,
+        "recall": 0.952292899408284,
+        "f1": 0.9596571322090748
+      },
+      "garage": {
+        "support": 657,
+        "precision": 0.4799176107106076,
+        "recall": 0.7092846270928462,
+        "f1": 0.5724815724815725
+      },
+      "car": {
+        "support": 7302,
+        "precision": 0.895516717325228,
+        "recall": 0.9683648315529991,
+        "f1": 0.930517173312278
+      },
+      "truck": {
+        "support": 276,
+        "precision": 0.6695652173913044,
+        "recall": 0.5579710144927537,
+        "f1": 0.6086956521739131
+      },
+      "trailer": {
+        "support": 178,
+        "precision": 0.44370860927152317,
+        "recall": 0.37640449438202245,
+        "f1": 0.4072948328267477
+      },
+      "caravan": {
+        "support": 14,
+        "precision": 0.0625,
+        "recall": 0.07142857142857142,
+        "f1": 0.06666666666666667
+      },
+      "motorcycle": {
+        "support": 110,
+        "precision": 0.33548387096774196,
+        "recall": 0.4727272727272727,
+        "f1": 0.39245283018867927
+      },
+      "bicycle": {
+        "support": 482,
+        "precision": 0.6536585365853659,
+        "recall": 0.5560165975103735,
+        "f1": 0.6008968609865472
+      },
+      "pedestrian": {
+        "support": 488,
+        "precision": 0.6895074946466809,
+        "recall": 0.6598360655737705,
+        "f1": 0.6743455497382198
+      },
+      "rider": {
+        "support": 233,
+        "precision": 0.6111111111111112,
+        "recall": 0.6609442060085837,
+        "f1": 0.6350515463917525
+      },
+      "bigPole": {
+        "support": 4293,
+        "precision": 0.9083917665686496,
+        "recall": 0.9354763568600046,
+        "f1": 0.9217351388570116
+      },
+      "smallPole": {
+        "support": 700,
+        "precision": 0.5641025641025641,
+        "recall": 0.5342857142857143,
+        "f1": 0.5487894350696991
+      },
+      "trafficLight": {
+        "support": 109,
+        "precision": 0.7454545454545455,
+        "recall": 0.3761467889908257,
+        "f1": 0.5
+      },
+      "trafficSign": {
+        "support": 1395,
+        "precision": 0.6768665850673194,
+        "recall": 0.792831541218638,
+        "f1": 0.7302740178276659
+      },
+      "lamp": {
+        "support": 7,
+        "precision": 0.3333333333333333,
+        "recall": 0.42857142857142855,
+        "f1": 0.375
+      },
+      "trashbin": {
+        "support": 791,
+        "precision": 0.5257009345794392,
+        "recall": 0.5689001264222503,
+        "f1": 0.546448087431694
+      },
+      "vendingmachine": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "box": {
+        "support": 917,
+        "precision": 0.39482470784641066,
+        "recall": 0.5158124318429662,
+        "f1": 0.44728132387706854
+      },
+      "stop": {
+        "support": 75,
+        "precision": 0.7777777777777778,
+        "recall": 0.28,
+        "f1": 0.4117647058823529
+      },
+      "bridge": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "tunnel": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "train": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "bus": {
+        "support": 17,
+        "precision": 0.9166666666666666,
+        "recall": 0.6470588235294118,
+        "f1": 0.7586206896551724
+      },
+      "unknownConstruction": {
+        "support": 199,
+        "precision": 0.3023255813953488,
+        "recall": 0.06532663316582915,
+        "f1": 0.10743801652892564
+      },
+      "unknownVehicle": {
+        "support": 80,
+        "precision": 0.5625,
+        "recall": 0.1125,
+        "f1": 0.18749999999999997
+      },
+      "unknownObject": {
+        "support": 1627,
+        "precision": 0.5360443622920518,
+        "recall": 0.1782421634910879,
+        "f1": 0.26752767527675275
+      }
+    }
+  },
+  "spatial": {
+    "threshold": 0.5,
+    "examples": 200168,
+    "macro_f1": 0.9375574276022357,
+    "mean_average_precision": 0.9831071966510307,
+    "micro_precision": 0.9330070435482746,
+    "micro_recall": 0.9843682066580604,
+    "micro_f1": 0.9579997135752321,
+    "exact_match_accuracy": 0.9413142959913673,
+    "unsupported_predicates": [],
+    "per_predicate": {
+      "left_of": {
+        "support": 55516,
+        "precision": 0.9433086949748135,
+        "recall": 0.9815908927156135,
+        "f1": 0.9620691177119655,
+        "average_precision": 0.9961590332583194
+      },
+      "in_front_of": {
+        "support": 56916,
+        "precision": 0.9437958049027041,
+        "recall": 0.9842399325321527,
+        "f1": 0.963593673400934,
+        "average_precision": 0.9966273088416375
+      },
+      "near": {
+        "support": 29706,
+        "precision": 0.9461785484906872,
+        "recall": 0.9918534976099105,
+        "f1": 0.9684777964040364,
+        "average_precision": 0.9980787148214619
+      },
+      "overlapping": {
+        "support": 5526,
+        "precision": 0.7095792537708389,
+        "recall": 0.9705030763662685,
+        "f1": 0.8197798838275757,
+        "average_precision": 0.9314356126469086
+      },
+      "occluding": {
+        "support": 1839,
+        "precision": 0.9555206698063841,
+        "recall": 0.9929309407286568,
+        "f1": 0.9738666666666667,
+        "average_precision": 0.993235313686826
+      }
+    }
+  },
+  "temporal_end_to_end": {
+    "threshold": 0.5,
+    "examples": 8110,
+    "macro_f1": 0.8557128939948878,
+    "mean_average_precision": 0.8627068709084602,
+    "micro_precision": 0.9186420836991513,
+    "micro_recall": 0.789288408348001,
+    "micro_f1": 0.8490668109277794,
+    "exact_match_accuracy": 0.8659679408138101,
+    "unsupported_predicates": [],
+    "per_predicate": {
+      "approaching": {
+        "support": 1689,
+        "precision": 0.9077225130890052,
+        "recall": 0.8211959739490823,
+        "f1": 0.8622940627914206,
+        "average_precision": 0.8728376393624357
+      },
+      "moving_away": {
+        "support": 1666,
+        "precision": 0.9062049062049062,
+        "recall": 0.7539015606242497,
+        "f1": 0.8230668414154652,
+        "average_precision": 0.8365997974012555
+      },
+      "same_motion_direction": {
+        "support": 622,
+        "precision": 0.9860834990059643,
+        "recall": 0.797427652733119,
+        "f1": 0.8817777777777778,
+        "average_precision": 0.8786831759616892
+      }
+    }
+  },
+  "predicted_tracklet_coverage": 0.8436498045921326,
+  "association": {
+    "association_accuracy": 0.9882006547867549,
+    "association_correct": 44974,
+    "association_decisions": 45511,
+    "mutual_link_precision": 0.9979765487184808,
+    "mutual_link_recall": 0.9872709541651696
+  },
+  "spatial_triplet_ranking": {
+    "definition": "Predicate ranking over fixed ordered object-pair candidates with ground-truth objects.",
+    "positive_triplets": 149503,
+    "R@20": 0.29042226577393093,
+    "mR@20": 0.2963202627732893,
+    "per_predicate_R@20": {
+      "left_of": 0.22697960948195114,
+      "in_front_of": 0.23889591678965494,
+      "near": 0.5148118225274355,
+      "overlapping": 0.2730727470141151,
+      "occluding": 0.22784121805328983
+    },
+    "R@50": 0.5473736312983686,
+    "mR@50": 0.5580271109949415,
+    "per_predicate_R@50": {
+      "left_of": 0.5006484617047338,
+      "in_front_of": 0.5144247663222995,
+      "near": 0.7050090890729146,
+      "overlapping": 0.5018096272167933,
+      "occluding": 0.5682436106579662
+    },
+    "R@100": 0.7678240570423336,
+    "mR@100": 0.7788573686632245,
+    "per_predicate_R@100": {
+      "left_of": 0.744163844657396,
+      "in_front_of": 0.7473469674608194,
+      "near": 0.8572678920083485,
+      "overlapping": 0.7146217879116902,
+      "occluding": 0.8308863512778684
+    }
+  },
+  "temporal_triplet_ranking": {
+    "definition": "Predicate ranking over fixed ordered object-pair candidates with ground-truth objects.",
+    "positive_triplets": 3977,
+    "R@20": 0.7357304500880061,
+    "mR@20": 0.7268789688968362,
+    "per_predicate_R@20": {
+      "approaching": 0.7892243931320307,
+      "moving_away": 0.6968787515006002,
+      "same_motion_direction": 0.6945337620578779
+    },
+    "R@50": 0.9119939653004777,
+    "mR@50": 0.918613157351183,
+    "per_predicate_R@50": {
+      "approaching": 0.9141503848431024,
+      "moving_away": 0.8979591836734694,
+      "same_motion_direction": 0.9437299035369775
+    },
+    "R@100": 0.9592657782247925,
+    "mR@100": 0.9644004278048937,
+    "per_predicate_R@100": {
+      "approaching": 0.9626998223801065,
+      "moving_away": 0.946578631452581,
+      "same_motion_direction": 0.9839228295819936
+    }
+  },
+  "combined_eight_predicate_macro_f1": 0.9068657274994802,
+  "combined_eight_predicate_map": 0.9379570744975667,
+  "threshold": 0.5,
+  "teacher_forced_tracklets": false,
+  "publishable_final_result": true,
+  "raw_predictions": "/data/sriparna/Arvind/temp/Exeriment/runs/seed_42/final_test_recovered/raw_predictions.h5",
+  "tracklet_recovery": {
+    "method": "validation-selected one-to-one fallback association recovery",
+    "variant": "all_margin_0p00",
+    "mode": "all",
+    "dustbin_margin_threshold": 0.0,
+    "selected_on_sequence": "2013_05_28_drive_0006_sync",
+    "ground_truth_used_for_recovery": false,
+    "ground_truth_used_for_post_hoc_metrics": true,
+    "manifest": "/data/sriparna/Arvind/temp/Exeriment/runs/seed_42/tracklet_recovery/held_out_recovery_manifest.json",
+    "manifest_sha256": "e299571960f862fe3b8d8ebe048e92ce63b02d4c3eddb6273bd3be041d9d7281",
+    "original_mutual_links": 19274,
+    "fallback_links": 80,
+    "correct_fallback_links": 71,
+    "predicted_recovery_links": 19354,
+    "correct_recovery_links": 19306,
+    "true_forward_links": 19483,
+    "recovery_link_precision": 0.9975198925286762,
+    "recovery_link_recall": 0.9909151568033671
+  }
+}
