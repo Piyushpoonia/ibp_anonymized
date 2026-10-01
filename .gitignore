@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+KITTI-360/
+PREPARED_DATASET/
+RUNS/
+resource/hf_home/
+*.log
+*.tmp

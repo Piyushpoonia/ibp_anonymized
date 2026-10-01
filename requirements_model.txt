@@ -1,0 +1,9 @@
+numpy>=1.26,<3
+pandas>=2.2,<3
+pyarrow>=17,<22
+h5py>=3.11,<4
+Pillow>=10,<12
+scipy>=1.12,<2
+torch==2.6.0
+transformers>=4.45,<6
+tqdm>=4.66,<5
